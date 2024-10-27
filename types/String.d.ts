@@ -11,8 +11,8 @@ interface String extends Iterable<string> {
 	 */
 	readonly _nominal_String: unique symbol;
 
-	readonly [index: number]: string;
-
 	/** The current number of characters in the string. */
 	size(this: string): number;
+
+	readonly [n: number]: string;
 }
